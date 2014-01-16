@@ -1,4 +1,6 @@
 Template.userCard.helpers
+  exists: -> @profile?
+
   name: ->
     if @profile.firstName && @profile.lastName
       "#{@profile.firstName} #{@profile.lastName}"
